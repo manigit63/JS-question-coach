@@ -7,14 +7,178 @@
   </head>
   <body>
     <script>
-      const age = Number(prompt("Enter your age: "));
-      let result =
-        age >= 18
-          ? `hello Shery, you can cast vote bcoz you are ${age}`
-          : `hello Shery, you can not vote || you have to wait for ${
-              18 - age
-            } years`;
-      document.write(`<h1>${result}</h1>`);
+      // _________________________________Normal Question_________________
+
+      // 3- Accept two integers from user and print the sum
+      // Ex - The sum of 45 & 12 = 57
+
+      // let a = Number(prompt("first num: "))
+      // let b = Number(prompt("second num: "))
+      // console.log(`${a} and ${b} sum is :${a+b}`)
+
+      // ___________________________________Math____________________
+
+      // 7- Accept the length and width of a rectangle. Calculate & print the area and perimiter
+
+      // let a = 11;
+      // let b = 12;
+      // console.log(`area of rectangle: ${a*b} `)
+      // console.log(`parameter of rectangle: ${(a+b)*2 } `)
+
+      // 8- Accept the parameters and calculate the Compound Interest
+
+      // let p = parseFloat(prompt("initial principal balance: "));
+      // let r = parseFloat(prompt("intrest rate (in percentage): "));
+      // r = r / 100;
+      // let t = parseFloat(prompt("no of time (years) periods elapsed: "));
+      // let n = parseFloat(
+      //   prompt(
+      //     "no of time/compounding frequency intrest applied per time period: "
+      //   )
+      // );
+
+      // if (isNaN(p) || isNaN(r) || isNaN(t) || isNaN(n)) {
+      //   console.log(`please enter valid input`);
+      // } else {
+      //   const a = p * Math.pow(1 + r / n, n * t);
+      //   const ci = a - p;
+
+      //   // Output results with two decimal places
+      //   console.log(
+      //     `Compound Intrest: ${ci.toFixed(2)} \n Amount : ${a.toFixed(2)}`
+      //   );
+      // }
+
+      // 9- Accept the three sides of triangle and calculate the area using herons formula
+
+      // let a = 7;
+      // let b = 24;
+      // let c = 25;
+
+      // // triangle validation
+      // if (a + b > c && b + c > a && c + a > b) {
+      //   // semi perimeter
+      //   let s = (a + b + c) / 2;
+      //   //Area of Triangle using Heron's formula
+      //   let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+      //   console.log(area);
+      // } else {
+      //   console.log(
+      //     `Invalid side: the given sides do not satisfy the triangle inequality`
+      //   );
+      // }
+
+      // 10- Find surface area of sphere = 4*pi*(r**2)
+
+      // function calculateSurfaceArea(radius) {
+      //   if (radius <= 0 || isNaN(radius)) {
+      //     console.log(`please enter a valid positive number of radius`);
+      //     return;
+      //   }
+      //   const surfaceArea = 4 * Math.PI * Math.pow(radius, 2);
+      //   console.log(
+      //     `the surface area with the sphere with radius ${radius} is : ${surfaceArea.toFixed(
+      //       2
+      //     )} square unit`
+      //   );
+      // }
+
+      // let radius = parseFloat(prompt("enter valid radius of sphere: "));
+      // calculateSurfaceArea(radius);
+
+      // 11- Find circumference and area of circle || Circumference of a Circle C = 2 × π × r.
+      // // Area of a Circle A = π × r2
+
+      // function areaFormula(radius) {
+      //   if (radius <= 0 || isNaN(radius)) {
+      //     console.log(`please enter a valid positive number of radius`);
+      //     return;
+      //   }
+
+      //   const circleCircumference = 2 * Math.PI * radius;
+      //   console.log(
+      //     `the area with the circle with radius ${radius} is : ${circleCircumference.toFixed(
+      //       2
+      //     )} square unit`
+      //   );
+
+      //   const circleArea = Math.PI * Math.pow(radius, 2);
+      //   console.log(
+      //     `the area with the circle with radius ${radius} is : ${circleArea.toFixed(
+      //       2
+      //     )} square unit`
+      //   );
+      // }
+
+      // let radius = parseFloat(prompt("enter valid radius of sphere: "));
+      // areaFormula(radius);
+
+      // _______________________if-else / switch case_____________________
+
+      // 16- Accept name and age from the user. Check if the user is a valid voter or not.
+      //     Vaid - Hello Shery, You are a valid voter.
+      //     Invalid - Sorry Shery, you can't cast the vote.
+      // Part 2 - Print after how many years the user will be eligible
+
+      // const age = Number(prompt("Enter your age: "));
+      // let result =
+      //   age >= 18
+      //     ? `hello Shery, you can cast vote bcoz you are ${age}`
+      //     : `hello Shery, you can not vote || you have to wait for ${
+      //         18 - age
+      //       } more years`;
+      // document.write(`<h1>${result}</h1>`);
+
+      //17-  Accept a day number between 1-7 and print the corresponding dayname.
+
+      // function getDayName(dayNumber) {
+      //   if (dayNumber < 0 || dayNumber > 6 || isNaN(dayNumber)) {
+      //     console.log(`please enter a valid day number from 1 to 7`);
+      //     return;
+      //   }
+      //   // Array of day names
+      //   const dayName = [
+      //     "Sunday",
+      //     "Monday",
+      //     "Tuesday",
+      //     "Wednesday",
+      //     "Thursday",
+      //     "Friday",
+      //     "Saturday",
+      //   ];
+
+      //   console.log(
+      //     `Day ${dayNumber + 1} corresponds to: ${dayName[dayNumber]}`
+      //   );
+      // }
+
+      // let dayNumber = parseInt(prompt("enter a day number (1-7): ")) - 1;
+      // console.log(dayNumber);
+      // getDayName(dayNumber);
+
+      // 18- Accept three numbers and print the greatest among them
+
+      // function findGreatestNumber(num1, num2, num3) {
+      //   if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+      //     console.log("Please enter valid numbers.");
+      //     return;
+      //   }
+
+      //   let greatest = Math.max(num1, num2, num3);
+      //   console.log(
+      //     `The greatest number among ${num1}, ${num2}, and ${num3} is: ${greatest}`
+      //   );
+      // }
+
+      // // Prompt user for three numbers
+      // let num1 = parseFloat(prompt("Enter the first number: "));
+      // let num2 = parseFloat(prompt("Enter the second number: "));
+      // let num3 = parseFloat(prompt("Enter the third number: "));
+
+      // // Call the function
+      // findGreatestNumber(num1, num2, num3);
+
+      
     </script>
   </body>
 </html>
