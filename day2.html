@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question</title>
+  </head>
+  <body>
+    <script>
+      // 19- Accept a year and check if it a leap year or not (google to find out what's a leap year)
+      // let year = parseInt(prompt("enter a year: ")); // 0004
+      // if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+      //   console.log("leap year");
+      // } else {
+      //   console.log("not a leap year");
+      // }
+
+      // -----------------------------------
+
+      // 22- Accept an english alphabet from user and check if it is a consonent or a vowel; --------------------------------------
+
+      // let input = prompt("enter a vowel")
+      // let input = "A";
+      // input = input.toLowerCase();
+      // switch (input) {
+      //   case "a":
+      //     console.log(input, " is a vowel");
+      //     break;
+      //   case "e":
+      //     console.log(input, " is a vowel");
+      //     break;
+      //   case "i":
+      //     console.log(input, " is a vowel");
+      //     break;
+      //   case "o":
+      //     console.log(input, " is a vowel");
+      //     break;
+      //   case "u":
+      //     console.log(input, " is a vowel");
+      //     break;
+      //   default:
+      //     console.log(input, "is a consonent");
+      // }
+
+      // ----------
+
+      // function searchChar(char) {
+      //   char = char.toLowerCase();
+
+      //   if ("aeiou".includes(char)) {
+      //     console.log("vowel found");
+      //   } else if ("bcdfghjklmnpqrstvwxyz".includes(char)) {
+      //     console.log("consonent found");
+      //   } else if ("1234567890".includes(char)) {
+      //     console.log(char, " is Number");
+      //   } else {
+      //     console.log(char, "is an special symbol");
+      //   }
+      // }
+
+      // let userInput = prompt("enter a number: ");
+      // if (userInput.length == 1) {
+      //   searchChar(userInput);
+      // } else {
+      //   console.log("please enter single character");
+      // }
+
+      // 27- Sum up to n terms. -----------------------------------
+      // formul  : n(n+1)/2
+
+      // let n = 100;
+      // let sum = 0;
+
+      // for (let i = 1; i <= n; i++) {
+      //   sum = sum + i;
+      // }
+      // console.log(sum, "<< total sum");
+
+      // 28- Factorial of a number -----------------------------------
+
+      // function Factorial(n) {
+      //   // base case
+      //   if (n === 0 || n === 1) {
+      //     return 1;
+      //   }
+      //   // factorial case
+      //   return n * Factorial(n - 1);
+      // }
+
+      // //  return >> 5 * 4 * 3 * 2 * 1 == 120
+
+      // let result = Factorial(5);
+      // console.log(result);
+      //
+
+      //  ------------
+      // let n = 10;
+      // let Factorial = 1
+      // for(n;n>0;n--){
+      //   Factorial = Factorial * n;
+      // }
+      // console.log(Factorial)
+
+      // // 29- Print the sum of all even & odd numbers in a range seperately.
+      // ---------------------------------------------------
+      // let start = 1;
+      // let end = 10;
+
+      // let odd_sum = 0;
+      // let even_sum = 0;
+
+      // for (let i = start; i <= end; i++) {
+      //   // even
+      //   if (i % 2 == 0) {
+      //     even_sum = even_sum + i;
+      //   } else {
+      //     odd_sum = odd_sum + i;
+      //   }
+      // }
+      // console.log(`sum of even ${even_sum}`);
+      // console.log(`sum of odd ${odd_sum}`);
+
+      // 30- Print all the factors of a number.  --------------------
+
+      // global scope
+
+      // function print_factors(num) {
+      //   let arr = [];
+      //   for (let i = 1; i <= num; i++) {
+      //     if (num % i == 0) {
+      //       arr.push(i);
+      //     }
+      //   }
+      //   console.log("factors :", arr);
+      //   return arr
+      // }
+      // let factorsArray = print_factors(15);
+      // // 31- Print the sum of all factors of a number, 50 -> 1 + 2 + 5 + 10 + 25 = 43
+      // function sum_of_array(arr) {
+      //   let sum = 0;
+      //   //
+      //   arr.forEach((element) => {
+      //     sum = sum + element;
+      //   });
+      //   return sum;
+      // }
+
+      // console.log("sum of factorials: ", sum_of_array(factorsArray));
+
+      // 32- Check if the number is Prime or not. --------------------
+
+      // var isPrime = function (n) {
+      //   if (n <= 1) return false; // Numbers less than or equal to 1 are not prime
+      //   for (var i = 2; i <= Math.sqrt(n); i++) {
+      //     if (n % i === 0) return false; // If divisible by i, not prime
+      //   }
+      //   return true; // If no divisors found, it's prime
+      // };
+
+      // // Example usage
+      // var number = parseInt(prompt("Enter a number: "));
+      // if (isPrime(number)) {
+      //   console.log(number + " is a prime number.");
+      // } else {
+      //   console.log(number + " is not a prime number.");
+      // }
+
+      // 34- Seprate each digit of a number and print it on the new line ex - 123   --------------------------------------------------------
+
+      // function seperate_digit(num) {
+      //   while (num != 0) {
+      //     // let digit;
+      //     // digit = num % 10;
+      //     console.log(num % 10);
+      //     num = Math.floor(num / 10);
+      //   }
+      // }
+
+      // num = 123;
+      // seperate_digit(num);
+
+      // -------------------------------------------------------
+
+      // var separateDigits = function (num) {
+      //   // Convert the number to a string
+      //   var numStr = num.toString();
+
+      //   // Iterate over each character and print it
+      //   for (var i = 0; i < numStr.length; i++) {
+      //     console.log(numStr[i]);
+      //   }
+      // };
+
+      // // Example usage
+      // var number = parseInt(prompt("Enter a number: "));
+      // separateDigits(number);
+
+      // 35- Sum of digits of a number, 936 = 18 --------------------
+
+      // function sum_of_digit(num){
+      //   let sum =0
+      //   while(num!=0){
+      //     sum = sum + (num % 10)
+      //     num = Math.floor(num / 10);
+      //   }
+      //   return sum
+      // }
+
+      // console.log(`sum of digit is  : ${sum_of_digit(123)}`)
+
+      // 36- Accept a number and print its reverse -----------------------
+
+      // var reverse_num = (num) => {
+
+      //   //  num > str > array > reverse > str
+      //   let reverseStr = num.toString().split('').reverse().join('')
+      //   return reverseStr
+      // }
+
+      // console.log(`reverse of digit is  : ${reverse_num(123)}`)
+
+      // 37- Accept a number and check if it is a pallindromic number (If number and its reverse are equal)/ -----------------------------
+
+      // function reverse_num(num) {
+      // let strNum = num.toString().split('').reverse().join('');
+      // let numm = parseInt(strNum);
+      // if (num === numm) {
+      //   console.log("palindromic number");
+      // } else {
+      //   console.log("not a pallindromic number");
+      // }
+      // }
+      // reverse_num(123);
+    </script>
+  </body>
+</html>
