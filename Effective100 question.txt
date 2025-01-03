@@ -63,7 +63,7 @@
 		2
 		1
 35- Sum of digits of a number, 936 = 18
-36- Accept a number and print its reverse
+36- Accept a number and print its reverse	
 37- Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
        Ex - 12321 - Rerverse - 12321
 38- Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
@@ -81,6 +81,30 @@
       If the user's guess is higher than the random number, the program should display "Too high, try again."
       If the user's guess is lower than the random number, the program should display "Too low, try again."
       The program should use a loop that repeats until the user correctly guesses the random number.
+
+	// Generate a random number between 1 and 100
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+let userGuess;
+let attempts = 0;
+
+// Start the loop to ask for the user's guess
+do {
+  // Prompt the user for their guess
+  userGuess = parseInt(prompt("Guess the number (between 1 and 100):"));
+
+  // Check if the guess is higher, lower, or correct
+  if (userGuess > randomNumber) {
+    alert("Too high, try again.");
+  } else if (userGuess < randomNumber) {
+    alert("Too low, try again.");
+  } else {
+    alert(`Correct! The number was ${randomNumber}. You guessed it in ${attempts + 1} attempts.`);
+  }
+
+  attempts++; // Increment the attempts counter
+
+} while (userGuess !== randomNumber); // Keep looping until the user guesses the correct number
+		
 45- Project Restuarent v 1.0
 
 ------------------------------------------------------------NESTED LOOP / PATTERN Day 20 to 21----------------------------------------------

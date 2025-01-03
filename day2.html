@@ -214,7 +214,8 @@
 
       //   //  num > str > array > reverse > str
       //   let reverseStr = num.toString().split('').reverse().join('')
-      //   return reverseStr
+      //   let reverseNum = Number(reverseStr)
+      //   return reverseNum
       // }
 
       // console.log(`reverse of digit is  : ${reverse_num(123)}`)
@@ -231,6 +232,143 @@
       // }
       // }
       // reverse_num(123);
+
+      // 38- Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
+      //  Ex- 145 = 1! + 4! + 5! = 145
+
+      // let num = 40585;
+      // let temp = num;
+      // let sum_of_fact = 0; // 120 + 24 + 1 == 145
+      // while (num != 0) {
+      //   // factorial function
+      //   function fact(rem) {
+      //     if (rem == 0 || rem == 1) {
+      //       return 1; // 1
+      //     }
+      //     return rem * fact(rem - 1); //120 , 24
+      //   }
+
+      //   let rem = num % 10; // rem = 5 , 4
+      //   sum_of_fact = sum_of_fact + fact(rem);
+      //   num = Math.floor(num / 10); //14
+      // }
+
+      // if (temp == sum_of_fact) {
+      //   console.log(`${temp} is an Strong number`);
+      // } else {
+      //   console.log(`${temp} is not an Strong number`);
+      // }
+
+      // 39- Automorphic number 5 = 25 = 625 = 390625, 6=36, 76 = 5776
+      // >> square
+      // >> square ko reverse >>  || /substring()/ slice(-indexing)
+      // >>  substring(0,original wali lenth )
+      // >> original == substring
+      //   1st method ::>>>>
+
+      // let num = 625; // 5
+      // let len = num.toString().length; // 1
+      // let sqr = num * num; // 25
+      // let last_digit_sqr = sqr.toString().slice(-len);
+      // if (num == last_digit_sqr) {
+      //   console.log("automorphic number");
+      // } else {
+      //   console.log("not an automorphic number");
+      // }
+
+      //  2 st method ::: >>>>>>>>
+
+      // function isAutomorphic(num) {
+      //   let square = num * num; // Calculate the square of the number
+      //   let numStr = num.toString(); // Convert the number to a string
+      //   let squareStr = square.toString(); // Convert the square to a string
+
+      //   // Check if the square ends with the number
+      //   if (squareStr.endsWith(numStr)) {
+      //     console.log(`${num} is an Automorphic number`);
+      //   } else {
+      //     console.log(`${num} is not an Automorphic number`);
+      //   }
+      // }
+
+      // // Test the function
+      // isAutomorphic(5); // Output: 5 is an Automorphic number
+      // isAutomorphic(25); // Output: 25 is an Automorphic number
+      // isAutomorphic(6); // Output: 6 is an Automorphic number
+      // isAutomorphic(7); // Output: 7 is not an Automorphic number
+
+      // 40- Print hello until user gives wrong input using do while
+
+      // let input;
+      // do {
+      //   input = prompt("type yes");
+      //   if (input.toLowerCase() === "yes") {
+      //     console.log("hello " + input);
+      //   }
+      // } while (input.toLowerCase() == "yes");
+      // console.log("wrong");
+
+      //     // 41- Make a choice based calculator using do while
+      //       let continueCalculation;
+      // do {
+      //   // Ask the user to choose an operation
+      //   let operation = prompt("Choose an operation:\n1. Addition (+)\n2. Subtraction (-)\n3. Multiplication (*)\n4. Division (/)\nEnter your choice (1/2/3/4):");
+
+      //   // Validate the input and perform the chosen operation
+      //   if (operation === '1' || operation === '2' || operation === '3' || operation === '4') {
+      //     // Get two numbers from the user
+      //     let num1 = parseFloat(prompt("Enter the first number:"));
+      //     let num2 = parseFloat(prompt("Enter the second number:"));
+
+      //     let result;
+
+      //     // Perform the chosen operation
+      //     switch (operation) {
+      //       case '1': // Addition
+      //         result = num1 + num2;
+      //         alert(`The result of ${num1} + ${num2} is ${result}`);
+      //         break;
+      //       case '2': // Subtraction
+      //         result = num1 - num2;
+      //         alert(`The result of ${num1} - ${num2} is ${result}`);
+      //         break;
+      //       case '3': // Multiplication
+      //         result = num1 * num2;
+      //         alert(`The result of ${num1} * ${num2} is ${result}`);
+      //         break;
+      //       case '4': // Division
+      //         if (num2 !== 0) {
+      //           result = num1 / num2;
+      //           alert(`The result of ${num1} / ${num2} is ${result}`);
+      //         } else {
+      //           alert("Error! Division by zero is not allowed.");
+      //         }
+      //         break;
+      //       default:
+      //         alert("Invalid operation.");
+      //         break;
+      //     }
+      //   } else {
+      //     alert("Invalid operation choice! Please enter a number between 1 and 4.");
+      //   }
+
+      //   // Ask the user if they want to perform another calculation
+      //   continueCalculation = prompt("Do you want to perform another calculation? (yes/no):").toLowerCase();
+
+      // } while (continueCalculation === 'yes'); // Continue if the user enters 'yes'
+
+      // alert("Thank you for using the calculator!");
+
+      // for (let j = 1; j <= 5; j++) {
+      //   let pattern = "";
+      //   for (let i = 1; i <= j; i++) {
+      //     pattern += "*" + " ";
+      //   }
+
+      //   console.log(pattern);
+      // }
+
+
     </script>
   </body>
 </html>
