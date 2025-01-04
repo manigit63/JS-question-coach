@@ -61,3 +61,81 @@
 // 	* * *
 // 	* *
 // 	*
+
+// for(let j = 5;j>=1;j--){
+//   let pattern=""
+//   for(let i = 1; i<=j ; i++){
+//     pattern += "*"
+//   }
+//   console.log(pattern)
+// }
+
+// 50- Mirrored Right Triangle
+// 	        *
+// 	      * *
+// 	    * * *
+// 	  * * * *
+// 	* * * * *
+
+// let n = 5
+// for(let j=1;j<=n;j++){
+//   let pattern = "";
+//   for(let i=1;i<=n;i++){
+//     if(i<=n-j) pattern += ' '
+//     else pattern += "*"
+//   }
+//   console.log(pattern)
+// }
+
+// qus : 
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+
+// let n = 5;
+// for(j=1;j<=5;j++){
+//     pattern = "";
+//     for(i=1;i<=n;i++){
+//         if(i<=n-j) pattern += " ";
+//         else pattern += " *"
+//     }
+//     console.log(pattern)
+// }
+
+// 52- V - Min Height = 3
+// 		*       * 
+// 		 *     *  
+// 		  *   *   
+// 		   * *    
+// 		    * 
+
+// let col =9
+// let row = 5
+// for(j=1;j<=row;j++){
+//   let pattern = ""
+//   for(i=1;i<=col;i++){
+//     if(i == j || (i+j == 10)) pattern += "*"
+//     else pattern += " "
+//   }console.log(pattern);
+
+// }
+
+
+// 53- X
+// *   *
+//  * *
+//   *
+//  * *
+// *   *
+
+// let col =5
+// let row = 5
+// for(j=1;j<=row;j++){
+//   let pattern = ""
+//   for(i=1;i<=col;i++){
+//     if(i == j || (i+j == 6)) pattern += "*"
+//     else pattern += " "
+//   }console.log(pattern);
+// }
